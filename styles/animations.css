@@ -34,10 +34,10 @@
 }
 
 @keyframes arrow {
-    0% {
-        right: 92px;
+    from {
+        transform: translate(0px);
     }
-    100% {
-        right: 96px;
+    to {
+        transform: translate(4px);
     }
 }
