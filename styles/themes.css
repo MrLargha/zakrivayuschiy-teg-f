@@ -10,7 +10,7 @@
   --main-text-color: #00cc14;
   --stroke-text-color: black;
   --button-background-color: black;
-  --button-text-color: #00cc14;
+  --button-inverse-text-color: #00cc14;
 
   --font-weight-title: 785;
   --font-weight: 465;
@@ -29,7 +29,7 @@
   --main-text-color: black;
   --stroke-text-color: white;
   --button-background-color: white;
-  --button-text-color: white;
+  --button-inverse-text-color: white;
 
   --font-weight-title: 700;
   --font-weight: 400;
@@ -48,7 +48,7 @@
     --color-accent: #00cc14;
     --stroke-text-color: black;
     --button-background-color: black;
-    --button-text-color: #00cc14;
+    --button-inverse-text-color: #00cc14;
     --main-text-color: #00cc14;
 
 

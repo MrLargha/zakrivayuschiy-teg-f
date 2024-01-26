@@ -5,7 +5,7 @@
     --main-text-color: black;
     --stroke-text-color: white;
     --button-background-color: white;
-    --button-text-color: white;
+    --button-inverse-text-color: white;
 
     --main-font: "Inter";
     --accent-font: "PressStart2P";
@@ -17,5 +17,7 @@
     --heart-body-color: #00000000;
     --heart-sparks-color: red;
     --heart-animation_color: red;
+
+    --border-size: 2px;
 }
 
