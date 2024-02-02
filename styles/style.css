@@ -140,8 +140,9 @@
 }
 
 .card__title {
-    padding-inline-start: 10px;
-    padding-block: 5px;
+    padding-inline: 10px;
+    padding-block-start: 4px;
+    padding-block-end: 3px;
 
     font-variation-settings: "wght" var(--font-weight-title, 700);
     font-size: 18px;
@@ -153,6 +154,7 @@
 .card__image-container {
     position: relative;
     display: flex;
+    border-block: var(--border-size) solid var(--color-accent);
 }
 
 .card__image-text {
@@ -192,7 +194,7 @@
 }
 
 .card__description {
-    padding: 27px 25px 0;
+    padding: 25px 25px 0;
     display: flex;
     flex-direction: column;
     row-gap: 27px;
@@ -201,6 +203,7 @@
 .card__description-text {
     font-size: 18px;
     line-height: 21px;
+    padding-inline-end: 4px;
 }
 
 .card__feedback {
@@ -224,7 +227,9 @@
     justify-content: center;
     align-items: center;
 
+    padding: 9px 17px;
     border: 2px solid var(--color-accent, #000);
+
     background-color: var(--main-background-color, #fff);
     font-family: var(--accent-font, "PressStart2P", fantasy);
     font-size: 14px;
@@ -383,5 +388,10 @@
     .dialog {
         padding: 32px 42px;
         max-width: 341px;
+    }
+
+    .card__image-text {
+        top: 23px;
+        right: 11px;
     }
 }
