@@ -15,8 +15,9 @@
 */
 
 .page {
-    min-inline-size: 320px;
+    min-inline-size: 375px;
     padding-block-start: 100px;
+    margin: 0 auto;
 
     font-family: var(--main-font), sans-serif;
     font-variation-settings: "wght" var(--font-weight);
@@ -28,7 +29,7 @@
 }
 
 .header {
-    inline-size: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
+    inline-size: clamp(23.5rem, 16.344rem + 30.4511vw, 43.75rem);
     padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
     padding-block-end: 22px;
     margin-bottom: 100px;
@@ -125,6 +126,7 @@
 }
 
 .cards__list {
+    margin-block-end: 50px;
     display: flex;
     flex-direction: column;
     gap: 51px;
@@ -220,6 +222,7 @@
     block-size: 38px;
     border: 2px solid transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -276,6 +279,7 @@
 
 .card__like-button {
     inline-size: 130px;
+    cursor: pointer;
 }
 
 .button__text {
@@ -316,7 +320,6 @@
 }
 
 .dialog {
-    max-width: 357px;
     padding: 31px 31.5px;
 
     color: var(--main-text-color, #000);
@@ -352,7 +355,9 @@
 }
 
 .dialog__button {
-    width: 100%;
+    padding: 9px 17px;
+    block-size: 38px;
+    inline-size: 100%;
 }
 
 .save__dialog-text {
@@ -362,7 +367,7 @@
     font-style: normal;
     line-height: 1.5;
     text-transform: uppercase;
-    inline-size: 234px;
+    max-inline-size: 234px;
 }
 
 /* filters section start */
@@ -397,6 +402,10 @@
 /* filters section end */
 
 @media (width <= 375px) {
+    .page {
+        inline-size: 100%;
+    }
+
     .button__save {
         flex-direction: column;
     }
@@ -407,8 +416,11 @@
     }
 
     .dialog {
-        padding: 32px 42px;
-        max-width: 341px;
+        padding: 30px 40px;
+    }
+
+    .save__dialog-text {
+        max-inline-size: 198px
     }
 
     .card__image-text {
