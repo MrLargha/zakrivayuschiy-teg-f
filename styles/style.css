@@ -320,8 +320,8 @@
 }
 
 .dialog {
-    padding: 31px 31.5px;
-
+    padding: 30px;
+    max-width: none;
     color: var(--main-text-color, #000);
     font-family: var(--accent-font, "PressStart2P"), fantasy;
     line-height: 150%; /* 21px */
@@ -356,7 +356,6 @@
 
 .dialog__button {
     padding: 9px 17px;
-    block-size: 38px;
     inline-size: 100%;
 }
 
